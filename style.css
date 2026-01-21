@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-card {
+    background: #fff;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0 ,0 , 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header{
+    background: linear-gradient(135deg, #5b7cfa 0%, #4e6ff5 100%);
+    height: 180px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: #f0f0f0;
+
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.card-content {
+    padding: 70px 30px 30px;
+    text-align: center;
+}
+
+.profile-name {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}  
+
+.profile-title {
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.action-button {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-subscribe {
+    background: linear-gradient(135deg, #5b7cfa 0%, #4e6ff5 100%);
+    color: #fff;
+}
+
+
+.btn-subscribe:hover {
+    transform: translate(3px);
+    box-shadow: 0 10px 25px rgba(78, 111, 245, 0.4);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+
+    & > a {
+
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 18px;
+
+        &:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+.facebook {
+    background: #3b5998;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.youtube {
+    background: #ff0000;
+}
